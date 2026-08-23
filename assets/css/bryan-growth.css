@@ -329,6 +329,25 @@ h1,h2,h3{margin:0}
 
 .colofon{display:grid;gap:8px;font-family:var(--grotesca);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gris);border-top:1px solid var(--gris-claro);padding-top:14px}
 
+/* ---------- Genéricos de pieza (reutilizables en cualquier post) ---------- */
+.texto{max-width:68ch}
+.lado-foto{display:grid;gap:0}
+.lado-foto .foto{height:280px;margin:0 0 28px}
+.lado-foto--abajo .lado-foto__foto{order:2}
+.lado-foto--abajo .foto{margin:28px 0 0}
+.mosaico--3,.mosaico--2{display:grid;gap:2px}
+.dos-col{max-width:68ch}
+.sec-cab{margin-bottom:28px}
+.sec-cab .kicker{margin-bottom:14px}
+.sec-cab .titular + .titular{margin-top:14px}
+.sec-cab .entradilla{margin:14px 0 0}
+.velo__kicker{font-family:var(--grotesca);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gris)}
+.velo .numero + .velo__titulo{margin-top:12px}
+.velo--negro .velo__kicker{color:var(--gris-claro)}
+.nivel__kicker{font-family:var(--grotesca);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gris);margin-bottom:6px}
+.nivel__texto--tinta{color:var(--tinta)}
+.cierre{margin-top:28px}
+
 /* ============================================================
    ≥720px — maquetación de página (computador / tablet)
    ============================================================ */
@@ -424,6 +443,18 @@ h1,h2,h3{margin:0}
   .klein-foto img{height:auto}
   .nivel5__cierre{font-weight:400;font-size:21px;line-height:1.36;max-width:60ch;padding-left:26px;border-left:4px solid var(--klein)}
   .nivel5{padding-bottom:28px !important}
+
+  /* Genéricos de pieza */
+  .lado-foto{grid-template-columns:1fr 240px;gap:28px;align-items:start}
+  .lado-foto .foto{height:auto;margin:0}
+  .lado-foto--abajo .lado-foto__foto{order:0}
+  .lado-foto--abajo .foto{margin:0}
+  .lado-foto--ancha{grid-template-columns:1fr 300px}
+  .mosaico--3{grid-template-columns:repeat(3,1fr)}
+  .mosaico--2{grid-template-columns:1fr 1fr}
+  .dos-col{column-count:2;column-gap:28px}
+  .dos-col .cuerpo{orphans:3;widows:3}
+  .velo__kicker{font-size:11px}
 
   .colofon{display:flex;justify-content:space-between;align-items:baseline;font-size:11px;padding-top:8px}
 }
