@@ -463,3 +463,9 @@ h1,h2,h3{margin:0}
   .encabezado{gap:var(--e-4)}
   .encabezado__nav{gap:var(--e-5)}
 }
+
+/* Fotos de abertura lado a lado (peça 2) */
+.fotos-abertura{margin:0 0 28px}
+.fotos-abertura .foto{height:auto;aspect-ratio:3/4;object-fit:cover}
+@media (max-width:719px){.fotos-abertura{grid-template-columns:1fr 1fr}}
+.disciplinas .mosaico.fotos-abertura{grid-template-columns:1fr 1fr;margin:0 0 28px}
