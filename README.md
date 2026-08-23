@@ -19,6 +19,10 @@ assets/logo/                      Monograma BG, 4 variantes (texto vivo: requier
 3. Poner las fotos en `imagens/` (blanco y negro, de archivo; JPEG ≤1200px para web).
 4. En `index.html` (portada): actualizar el bloque **Última peça** (foto 16:9, número, título, pie, etiqueta). La lista **Todas as peças** está comentada mientras hay una sola pieza: al publicar la segunda, quitar los delimitadores `<!-- -->` y añadir una `<li>` por pieza (la más nueva arriba), con el mismo título y pie que usa el post.
 
+## Idioma
+
+Todo el blog es en **portugués (pt-BR)**: chrome, portada y todas las piezas. Si la fuente está en otro idioma, se traduce antes de maquetar.
+
 ## Copy: una sola verdad por pieza
 
 El título (línea grotesca, ≤5 palabras), el pie de una línea, la categoría, la fecha y los minutos de lectura se escriben una vez y se repiten iguales en: `<title>`, portada (destaque y lista), cabecera del post y cabecera corrida. Mayúscula inicial de frase, nunca Title Case. Byline: `Bryan Orellana · estrategista criativo`.
