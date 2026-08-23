@@ -15,7 +15,7 @@ assets/logo/                      Monograma BG, 4 variantes (texto vivo: requier
 ## Añadir una pieza
 
 1. Duplicar `escritos/niveis-de-consciencia/` con un nuevo slug (minúsculas, guiones).
-2. En su `index.html` cambiar: `<title>`, metas, número de pieza (`7` → el siguiente del registro, sin ceros a la izquierda, no se reinicia), etiqueta de categoría, tiempo de lectura, fecha, título (línea grotesca + línea didona), entradilla y el cuerpo.
+2. En su `index.html` cambiar: `<title>`, metas, número de pieza (`1` → correlativo: la siguiente es la `2`; sin ceros a la izquierda), etiqueta de categoría, tiempo de lectura, fecha, título (línea grotesca + línea didona), entradilla y el cuerpo.
 3. Poner las fotos en `imagens/` (blanco y negro, de archivo; JPEG ≤1200px para web).
 4. En `index.html` (portada): actualizar el bloque **Última peça** (foto 16:9, número, título, pie, etiqueta). La lista **Todas as peças** está comentada mientras hay una sola pieza: al publicar la segunda, quitar los delimitadores `<!-- -->` y añadir una `<li>` por pieza (la más nueva arriba), con el mismo título y pie que usa el post.
 
