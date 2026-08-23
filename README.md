@@ -23,6 +23,10 @@ assets/logo/                      Monograma BG, 4 variantes (texto vivo: requier
 
 Todo el blog es en **portugués (pt-BR)**: chrome, portada y todas las piezas. Si la fuente está en otro idioma, se traduce antes de maquetar.
 
+## Copy de la portada
+
+Entradilla aprobada (23 ago 2026): *«Copywriting e automação parecem dois polos opostos: de um lado, o desejo de um cliente concreto; do outro, um sistema que roda sozinho. A resposta não é um ou outro. É a síntese — e é dela que estes escritos tratam. Seja bem-vindo.»* La meta description resume la misma idea.
+
 ## Copy: una sola verdad por pieza
 
 El título (línea grotesca, ≤5 palabras), el pie de una línea, la categoría, la fecha y los minutos de lectura se escriben una vez y se repiten iguales en: `<title>`, portada (destaque y lista), cabecera del post y cabecera corrida. Mayúscula inicial de frase, nunca Title Case. Byline: `Bryan Orellana · estrategista criativo`.
