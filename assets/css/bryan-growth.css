@@ -348,6 +348,26 @@ h1,h2,h3{margin:0}
 .nivel__texto--tinta{color:var(--tinta)}
 .cierre{margin-top:28px}
 
+/* ---------- Estrutura de copy (peça 3) ---------- */
+/* Sobrancelha: versalita acima do número/título */
+.sobrancelha{font-family:var(--grotesca);font-weight:700;font-size:var(--t-versalita);text-transform:uppercase;letter-spacing:var(--track-versalita-ancha);color:var(--gris);margin:0 0 var(--e-4)}
+/* Balde: frase-ponte curta, sozinha, que puxa a leitura */
+.balde{font-family:var(--lectura);font-weight:600;font-size:20px;line-height:1.45;color:var(--tinta);margin:var(--e-7) 0;max-width:40ch}
+/* Subtítulo interno de uma parte */
+.subsec{font-family:var(--grotesca-negra);font-weight:400;font-size:18px;line-height:1.1;letter-spacing:var(--track-grotesca);text-transform:uppercase;margin:var(--e-9) 0 var(--e-3);padding-top:var(--e-4);border-top:1px solid var(--gris-claro);max-width:none}
+/* Foto larga 16:9 dentro do corpo */
+.foto--larga{aspect-ratio:16/9;height:auto;margin:var(--e-8) 0}
+/* Diálogo de abertura */
+.dialogo{font-family:var(--didona);font-style:italic;font-weight:900;font-size:clamp(28px,6vw,44px);line-height:1.05;letter-spacing:-.02em;margin:var(--e-6) 0;max-width:none}
+.dialogo span{display:block}
+.dialogo span + span{margin-top:var(--e-2)}
+/* Referências compactas */
+.referencias{counter-reset:ref}
+.refs{list-style:none;margin:0;padding:0;border-top:1px solid var(--gris-claro)}
+.refs li{counter-increment:ref;display:grid;grid-template-columns:34px 1fr;gap:var(--e-3);padding:var(--e-3) 0;border-bottom:1px solid var(--gris-claro);font-family:var(--lectura);font-size:var(--t-menor);line-height:1.45;color:var(--gris)}
+.refs li::before{content:counter(ref);font-family:var(--didona);font-weight:900;font-size:17px;line-height:1.2;color:var(--tinta)}
+.refs__grupo{font-family:var(--grotesca);font-weight:700;font-size:var(--t-versalita);text-transform:uppercase;letter-spacing:var(--track-versalita);color:var(--gris);margin:var(--e-8) 0 var(--e-3)}
+
 /* ============================================================
    ≥720px — maquetación de página (computador / tablet)
    ============================================================ */
@@ -456,6 +476,8 @@ h1,h2,h3{margin:0}
   .dos-col .cuerpo{orphans:3;widows:3}
   .velo__kicker{font-size:11px}
 
+  .balde{font-size:21px}
+  .subsec{font-size:20px}
   .colofon{display:flex;justify-content:space-between;align-items:baseline;font-size:11px;padding-top:8px}
 }
 
